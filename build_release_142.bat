@@ -10,7 +10,7 @@ xcopy "Resources\GameData\MagicSmokeIndustries\IRActiveStruts\Parts" "_release\G
 xcopy "Resources\GameData\MagicSmokeIndustries\IRActiveStruts\Plugins" "_release\GameData142\GameData\MagicSmokeIndustries\IRActiveStruts\Plugins\" /S /E /Y
 xcopy "Resources\GameData\MagicSmokeIndustries\IRActiveStruts\Sounds" "_release\GameData142\GameData\MagicSmokeIndustries\IRActiveStruts\Sounds\" /S /E /Y
 
-copy "Resources\GameData\MagicSmokeIndustries\IRActiveStruts\ActiveStruts_1.3.version" "_release\GameData142\GameData\MagicSmokeIndustries\IRActiveStruts\ActiveStruts.version"
+copy "Resources\GameData\MagicSmokeIndustries\IRActiveStruts\ActiveStruts_1.4.version" "_release\GameData142\GameData\MagicSmokeIndustries\IRActiveStruts\ActiveStruts.version"
 
 copy "ActiveStruts\ActiveStruts\bin\Release 1.4.2\ActiveStruts.dll" "_release\GameData142\GameData\MagicSmokeIndustries\IRActiveStruts\Plugins\ActiveStruts.dll"
 
