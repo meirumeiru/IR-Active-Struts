@@ -282,6 +282,7 @@ public Part Part() { return part; }
 			UpdateUI();
 		}
 
+			// FEHLER, siehe IR -> gibt's neu von Unity direkt
 		public static float AngleSigned(Vector3 v1, Vector3 v2, Vector3 n)
 		{
 			// negativ, because unity is left handed and we would have to correct this always
@@ -401,6 +402,7 @@ public Part Part() { return part; }
 			var mr = targetObject.GetComponent<MeshRenderer>();
 			mr.name = targetObject.name;
 			mr.material = new Material(Shader.Find("Diffuse")) {color = Color.magenta};
+mr.enabled = false; // FEHLER, später den Mist ganz raus
 			targetObject.GetComponent<Rigidbody>().mass = 0.01f;
 			targetObject.SetActive(true);
 
@@ -570,6 +572,14 @@ public Part Part() { return part; }
 //		public void Update()
 //		{
 //		}
+
+// FEHLER FEHLER; temp
+		[KSPEvent(guiActive = true, guiActiveEditor = true, guiActiveUnfocused = true, unfocusedRange = Config.UNFOCUSED_RANGE, guiName = "Test")]
+		public void Test()
+		{
+			Quaternion rotationHead = quat(targetObject.transform, CalculateBestHeadTurn());
+			Grappler.rotation = rotationHead;
+		}
 
 		public void LateUpdate()
 		{
@@ -742,7 +752,7 @@ public Part Part() { return part; }
 					// dann die Rotation der Strebe
 
 					float angleStrut =
-						AngleSigned(StrutOriginalRotation * axis, Strut.localRotation * axis, pointer);
+						AngleSigned(StrutOriginalRotation * axis, Strut.localRotation * axis, rotationBase * pointer);
 
 					Quaternion rotationStrut = Quaternion.AngleAxis(-angleStrut, rotationBase * pointer);
 
@@ -768,8 +778,8 @@ public Part Part() { return part; }
 
 						float angle = Quaternion.Angle(Grappler.rotation, rotationHead);
 
-						if(angle > 1f)
-							Grappler.localRotation = Quaternion.Slerp(Grappler.localRotation, rotationHead, 1f / angle);
+						if(angle > 3f)
+							Grappler.localRotation = Quaternion.Slerp(Grappler.localRotation, rotationHead, 3f / angle);
 						else
 							Grappler.localRotation = rotationHead;
 

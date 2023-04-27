@@ -236,7 +236,7 @@ namespace ActiveStruts.Addons
 
 			if((Mode == AddonMode.Link) && (CurrentTargeter != null))
 			{
-				Tuple<Vector3, RaycastHit?> mp = Utilities.GetMouseWorldPosition();
+				ActiveStruts.Util.Tuple<Vector3, RaycastHit?> mp = Utilities.GetMouseWorldPosition();
 				if(mp != null)
 				{
 					var raycast = Utilities.PerformRaycast(

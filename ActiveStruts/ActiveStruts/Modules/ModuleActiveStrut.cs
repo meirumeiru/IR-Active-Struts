@@ -2564,10 +2564,10 @@ if(Anchor == null)
 }
 		}
 
-		private Tuple<bool, RaycastHit> _performStraightOutRaycast()
+		private ActiveStruts.Util.Tuple<bool, RaycastHit> _performStraightOutRaycast()
 		{
 			var rayRes = Utilities.PerformRaycastIntoDir(Origin.position, RealModelForward, RealModelForward, part);
-			return new Tuple<bool, RaycastHit>(rayRes.HitResult, rayRes.Hit);
+			return new ActiveStruts.Util.Tuple<bool, RaycastHit>(rayRes.HitResult, rayRes.Hit);
 		}
 
 		private void _realignStrut()
