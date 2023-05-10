@@ -1,10 +1,10 @@
 ﻿{
   "NAME"     : "Infernal Robotics Next - ActiveStruts",
-  "DOWNLOAD" : "https://github.com/meirumeiru/IR-ActiveStruts/releases",
-  "URL"      : "https://github.com/meirumeiru/IR-ActiveStruts/raw/main/Resources/GameData/IRActiveStruts/ActiveStruts.version",
+  "DOWNLOAD" : "https://github.com/meirumeiru/IR-Active-Struts/releases",
+  "URL"      : "https://github.com/meirumeiru/IR-Active-Struts/raw/main/Resources/GameData/IRActiveStruts/ActiveStruts.version",
   "GITHUB" : {
       "USERNAME"   : "meirumeiru",
-      "REPOSITORY" : "IR-ActiveStruts"
+      "REPOSITORY" : "IR-Active-Struts"
   },
   "VERSION" : {
     "MAJOR" : 3,
