@@ -7,8 +7,8 @@
     <ProjectGuid>{0CCA2E32-EF2A-40E9-B70E-FCB177BB52B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ActiveStruts</RootNamespace>
-    <AssemblyName>ActiveStruts</AssemblyName>
+    <RootNamespace>IRActiveStruts</RootNamespace>
+    <AssemblyName>IRActiveStruts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
